@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "260ccedc-65c6-4008-b147-bfdc1f3442d1",
+		"name": "dh01",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "saludokaren",
+						"value": "lala",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3067",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3067"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "saludokaren",
+						"value": "lala",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"3\",\n    \"name\": \"Matiti\",\n    \"lastname\":\"Vieira\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3067",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3067",
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
